@@ -9,7 +9,7 @@ interface VoucherProps {
   status: string
 }
 
-export default function Voucher({ title, description, icon, onGet }: VoucherProps) {
+export default function Voucher({ title, description, icon, status }: VoucherProps) {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
       <div className="text-4xl mb-4">{icon}</div>

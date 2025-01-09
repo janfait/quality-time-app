@@ -2,6 +2,15 @@ import { NextResponse } from 'next/server'
 import fs from 'fs/promises'
 import path from 'path'
 
+interface Voucher {
+  id: string;
+  code: string;
+  title: string;
+  description: string;
+  icon: string;
+  status: string;
+}
+
 const vouchersPath = path.join(process.cwd(), 'app/db/vouchers.json')
 
 export async function POST(request: Request) {
@@ -13,10 +22,9 @@ export async function POST(request: Request) {
     }
 
     const fileContents = await fs.readFile(vouchersPath, 'utf8')
-    let vouchers = JSON.parse(fileContents)
-
-    const voucherIndex = vouchers.findIndex((v: any) => v.code === code)
-
+    const vouchers: Voucher[] = JSON.parse(fileContents);
+    const voucherIndex = vouchers.findIndex((v: Voucher) => v.code === code);
+    
     console.log(voucherIndex)
 
     if (voucherIndex == -1) {
@@ -30,7 +38,7 @@ export async function POST(request: Request) {
     // Write the updated vouchers back to the file
     await fs.writeFile(vouchersPath, JSON.stringify(vouchers, null, 2))
 
-    let output = { success: true, message: 'Voucher redeemed successfully', voucher: vouchers[voucherIndex]}
+    const output = { success: true, message: 'Voucher redeemed successfully', voucher: vouchers[voucherIndex]}
     console.log(JSON.stringify(output))
     return NextResponse.json(output)
   } catch (error) {
