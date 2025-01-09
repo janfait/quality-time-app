@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1",
+    "title": "Movie Night",
+    "description": "A movie, includes nachos. Gotta have lasers though.",
+    "icon": "🍿",
+    "code": "V5mJuB7f",
+    "status": "active"
+  },
+  {
+    "id": "2",
+    "title": "Words of appreciation vol.1",
+    "description": "30 minutes where you can say anything, and I have to give you compliments for it",
+    "icon": "😬",
+    "code": "xZFNjP5t",
+    "status": "active"
+  },
+  {
+    "id": "3",
+    "title": "Wednesday breakfast vol.1",
+    "description": "Not going to work early, having a breakfast in a kaficko with you.",
+    "icon": "🥞",
+    "code": "Gs6rWzEU",
+    "status": "active"
+  },
+  {
+    "id": "4",
+    "title": "Bike trip",
+    "description": "A bike trip, not sure where the children will be",
+    "icon": "🚲",
+    "code": "zYHkjx8K",
+    "status": "active"
+  },
+  {
+    "id": "5",
+    "title": "Quick beer in Lokal on a Monday",
+    "description": "Escape after bedtime. You can talk while I drink beer.",
+    "icon": "🎲",
+    "code": "Dz4Gy5vW",
+    "status": "active"
+  },
+  {
+    "id": "6",
+    "title": "Words of appreciation vol.2",
+    "description": "30 minutes where you can say anything, and I have to give you compliments for it",
+    "icon": "😬",
+    "code": "xZ12rjPx",
+    "status": "active"
+  },
+  {
+    "id": "7",
+    "title": "Sauna & Swim",
+    "description": "Or the other way around",
+    "icon": "🧖‍♀️",
+    "code": "1sEr8zp",
+    "status": "active"
+  },
+  {
+    "id": "8",
+    "title": "Demo",
+    "description": "Use the code 12345 to test this.",
+    "icon": "🤖",
+    "code": "12345",
+    "status": "active"
+  },
+  {
+    "id": "9",
+    "title": "Wednesday breakfast vol.2",
+    "description": "Not going to work early, having a breakfast in a kaficko with you.",
+    "icon": "🥞",
+    "code": "xPZ12Dz4",
+    "status": "active"
+  }
+]
+
